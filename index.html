@@ -2,9 +2,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Displays</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Exemplos de Displays</title>
 </head>
 <body>
-    <p>teste</p>
+    <!-- Display: grid -->
+    <section id="grid">
+        <div id="divGrid1"><h1>1</h1></div>
+        <div id="divGrid2"><h1>2</h1></div>
+        <div id="divGrid3"><h1>3</h1></div>
+        <div id="divGrid4"><h1>4</h1></div>
+    </section>
+    <!-- Display: flow-root -->
+    <div class="divflow">
+        <h1>Display: flow-root</h1>
+        <div class="containerroot">
+            <div class="item"></div>
+            <p>Exemplo sem o display: <strong>flow-root</strong>.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <br>
+        <div class="containerroot container3root">
+            <div class="item"></div>
+            <p>Exemplo com o display: <strong>flow-root</strong>.</p>
+        </div>
+    </div>
+    <!-- Display: none -->
+    <section class="section1">
+        <div class="flex">
+            <div class="container1"></div>
+            <div class="container2">
+                <p class="tituloexplicacao">Imagem normal</p>
+                <p class="explicacao">Neste exemplo, não temos a utilização de nenhum display. Como podemos ver, existe um quadrado dentro de outro quadrado.</p>
+            </div>
+            <div id="quadrado1">
+                <div id="quadrado2"></div>
+            </div>
+        </div>
+ </section>
+ <section class="section1">
+    <div class="flex">
+        <div class="container1"></div>
+        <div class="container2">
+            <p class="tituloexplicacao">display:none;</p>
+            <p class="explicacao">Com display: none;</p>
+            <p class="explicacao">Como podemos ver, o quadrado interno, não existe mais.</p>
+        </div>
+        <div id="quadrado1">
+            <div id="quadrado3"></div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
